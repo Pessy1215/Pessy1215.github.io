@@ -1,0 +1,92 @@
+<!--留言板網頁-->
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessy Portfolio</title>
+    <link rel="icon" type="image/png" href="images/LOGO圖/網站LOGO (pdf.io).jpg">
+
+<!--CSS-->    
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<!--CSS-->
+
+<!--Java-->
+    <script src="script.js" defer></script>
+<!--Java-->
+
+</head>
+<body>
+
+<!--頁首-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="About Me.html">關於我</a></li>
+                <li><a href="photography.html">攝影作品集</a></li>
+                <li><a href="designworks.html">設計作品集</a></li>
+                <li><a href="Contact Form.html">留言板</a></li>
+                <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
+            </ul>
+        </nav>
+      </header>
+<!--頁首-->
+
+
+<!--內文內容-->
+    <section id="home">
+        <div class="container">
+            <h1>留言板</h1>
+        </div>
+    </section>
+    <section id="contact">
+
+        <div class="comment">
+            <div class="avatar">
+                <img src="https://via.placeholder.com/150" alt="用戶1">
+            </div>
+        <div class="comment-text">
+            <h4>用戶1</h4>
+            <p>這個作品很棒！</p>
+        </div>
+        </div>
+
+        <div class="comment">
+            <div class="avatar">
+                <img src="https://via.placeholder.com/150" alt="用戶2">
+            </div>
+            <div class="comment-text">
+                <h4>用戶2</h4>
+                <p>期待看到更多作品！</p>
+            </div>
+        </div>
+
+            <!-- 可以添加更多留言 -->
+
+        </div>
+            <form class="comment-form">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">留言：</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">發送留言</button>
+            </form>
+        </div>
+
+    </section>
+<!--內文內容-->
+
+
+<!--頁尾-->
+    <footer>
+        <p>&copy; 2024 Pessy Portfolio</p>
+    </footer>
+<!--頁尾-->   
+      
+
+</body>
+</html>
