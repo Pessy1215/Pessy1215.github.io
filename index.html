@@ -25,16 +25,15 @@
 <!--頁首-->
     <header>
         <nav>
-            <ul>
-                <li><a href="home.html">首頁</a></li>
-                <li><a href="About Me.html">關於我</a></li>
-                <li><a href="photography.html">攝影作品集</a></li>
-                <li><a href="Editing.html">剪輯作品集</a></li>
-                <li><a href="designworks.html">設計作品集</a></li>
-                <li><a href="Contact Form.html">留言板</a></li>
-                <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
-            </ul>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="About Me.html">關於我</a></li>
+            <li><a href="photography.html">攝影作品集</a></li>
+            <li><a href="designworks.html">設計作品集</a></li>
+            <li><a href="Contact Form.html">留言板</a></li>
+            <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
+        </ul>
         </nav>
     </header>
 <!--頁首-->
@@ -42,12 +41,30 @@
 
 <!--內文內容-->
 
-    <section id="about">
+    <section id="home">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="images/影片/【影視35】112藝術群專題比賽1分鐘片花.mp4" type="video/mp4">
+            </video>
+        </div> 
+
         <div class="container">
-            <img class="simple-photo" src="images/我的照片/IMG_9328拷貝.JPG" alt="照片">
-            <p>Hi，QAQ，WWW。</p>
+            <h1>個人作品集 personal portfolio</h1>
         </div>
     </section>
+
+
+    <section id="about">
+        <div class="container about-content">
+            <img class="simple-photo" src="images/我的照片/1K4A0951.JPG" alt="照片">
+            <p class="simple-word">Hi！這裡是我分享生活、作品和想法並分享給大家的地方。</br></br>
+                請隨意瀏覽，如果有任何疑問或建議，歡迎與我聯繫！</br></br>
+                如若對我的作品有興趣可以點右上角的連結追蹤我的Instagram和YouTube。</br></br>
+                我會不時更新作品喔！</br></br>
+                如果想知道我的資訊可以點擊「關於我」，裡面會有我的相關介紹。</p>
+        </div>
+    </section>
+
 
     <section id="portfolio" class="gallery">
         <div class="container">
@@ -55,28 +72,40 @@
         <div class="grid">
 
         <div class="grid-item">
-            <img src="https://via.placeholder.com/400" alt="作品1">
-            <div class="overlay">
-                <h3>作品標題1（照片）</h3>
-                <p>作品描述</p>
-            </div>
+        <img src="images/作品照片/截圖 2024-03-28 上午2.38.53.png" alt="作品1">
+        <div class="overlay">
+            <a href="攝影作品/20231219.html">
+            <h3>忠烈祠紀念堂桃園神社</h3>
+            <p>日期｜2023.12.19 </br>
+              拍攝器材｜Canon 70D 15-85mm
+            </p>
+            </a>
         </div>
+      </div>
 
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/400" alt="作品2">
-            <div class="overlay">
-                <h3>作品標題2（海報）</h3>
-                <p>作品描述</p>
-            </div>
-        </div>
+      <div class="grid-item">
+          <img src="images/作品照片/截圖 2024-03-28 上午2.38.00.png" alt="作品2">
+          <div class="overlay">
+              <a href="攝影作品/20231009.html">
+              <h3>新北市 寶橋路口</h3>
+              <p>日期｜2023.10.9 </br>
+                拍攝器材｜Canon 70D 15-85mm
+              </p>
+              </a>
+          </div>
+      </div>
 
-        <div class="grid-item">
-            <img src="https://via.placeholder.com/400" alt="作品2">
-            <div class="overlay">
-                <h3>作品標題3</h3>
-                <p>作品描述</p>
-            </div>
-        </div>
+      <div class="grid-item">
+          <img src="images/作品照片/截圖 2024-03-28 上午2.37.12.png" alt="作品2">
+          <div class="overlay">
+            <a href="攝影作品/20230922.html">
+              <h3>台北市 世新大學</h3>
+              <p>日期｜2023.9.22 </br>
+                拍攝器材｜Canon 70D 15-85mm
+              </p>
+            </a>
+          </div>
+      </div>
         <div class="grid-item">
             <img src="https://via.placeholder.com/400" alt="作品2">
             <div class="overlay">
@@ -106,15 +135,52 @@
       </div>
     </div>
   </section>
+
+        <!-- <section>
+    <div class="recommend">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AlAZqul1Bec?si=2NOvjI6WANlUFqO1" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/loj85DVwKoc?si=bDO-Er5jz2xfySJd" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+    </section>-->
+
+
 <!--內文內容-->
 
 
 <!--頁尾-->
-  <footer>
-    <p>&copy; 2024 Pessy Portfolio</p>
-    <a class="expedu_icon" href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ" target="_blank"><i class="fa-solid fa-link"></i></a>
-  </footer>
+<footer class="">
+
+    <div class="">
+        <div class="">桃園市政府觀光旅遊局</div>
+
+            <div class="">
+                <div>
+                    <p class="">330206 桃園市桃園區縣府路1號</p>
+                    <p class="">電話：(03)332-2101#6209</p>
+                </div>
+            </div>
+                    
+
+            <div class="">
+                <ul class="">
+                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="/zh-tw/siteinformation/securitypolicy">資訊安全政策</a></li>
+                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="/zh-tw/siteinformation/gwoia">網站資料開放宣告</a></li>
+                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="/zh-tw/siteinformation/privacypolicy">隱私權政策</a></li>
+                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="https://tour.tycg.gov.tw/" title="行政資訊網(另開視窗)" target="_blank" rel="noopener noreferrer">行政資訊網</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="py-1 px-2 text-center bg-gray-200 fz-12px"> © 2024 Pessy Portfolio</div>
+</footer>
 <!--頁尾-->
+
+
 
 </body>
 </html>
