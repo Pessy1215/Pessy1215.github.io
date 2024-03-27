@@ -23,6 +23,11 @@ body {
   a:hover {
     color: #a5dee4; 
   }
+  .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
 
 
 /* 頁首部分-----------------------------------*/
@@ -176,122 +181,18 @@ body {
 /* 首頁網頁-----------------------------------*/
 
 
-/* 關於我網頁---------------------------------*/
-  #about {
-    padding: 80px 0;
-  }
-  
-  #about h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-
-  #about h3 {
-    font-size: 36px;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    border-bottom: 2px #7db9df solid;/* 線顏色 */
-  }
-
-  #about h4 {
-    font-size: 30px;
-    margin-bottom: 5px;
-    margin-top: 12px;
-    margin-left: 10px;
-  }
-
-  #about p {
-    font-size: 22px;
-  }
-
-  .h4content {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-
-  .container-photo {
-    width: 700px;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    margin-bottom: 25px;
-  }
-/* 關於我網頁---------------------------------*/
 
 
-/* 留言板網頁---------------------------------*/
-  #contact {
-    padding: 80px 0;
-    margin-left: 100px;
-  }
-  
-  #contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-  
-  .comments {
-    margin-bottom: 40px;
-  }
-  
-  .comment {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .avatar img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .comment-text {
-    flex: 1;
-  }
-  
-  .comment-form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  form input[type="text"],
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #fcfaf2;
-    border-radius: 5px;
-  }
-  
-  form button {
-    background-color: #373c38; 
-    color: #fcfaf2;/* 字體顏色 */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #7db9df; 
-  }
-/* 留言板網頁---------------------------------*/
 
 
+
+
+
+
+/* 中邊欄-----------------------------------*/
 /* 報導部分 */
 article {
-  width: 60%;
+  width: 60%; /* 在手機版寬度佔滿 */
   order: 2;
 }
 article img {
@@ -301,7 +202,7 @@ article img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-  margin-top: px;
+  margin-top: 20px;
 }
 .post-info {
   position: relative;
@@ -338,14 +239,18 @@ article img {
   margin-left: 120px;
 }
 .post-em {
+  font-size: 36px;
   margin-bottom: 30px;
-  line-height: 30px; 
+  margin-top: 20px;
+  border-bottom: 2px #7db9df solid;/* 線顏色 */
 }
+/* 中邊欄-----------------------------------*/
 
 
-/* 右邊欄 */
+/* 右邊欄-----------------------------------*/
+/* 自我介紹 */
 aside {
-  width: 25%;
+  width: 18%; /* 在較大螢幕寬度為 25% */
   order: 3;
 }
 aside p {
@@ -358,9 +263,11 @@ aside p {
 aside iframe {
   margin-top: 20px;
   margin-bottom: 10px;
-  width: 300px;
-  height: 170px;
+  width: 300px; /* 在手機版寬度佔滿 */
+  height: 200px; /* 調整相關影片高度 */
 }
+
+/* 相關影片 */
 .sub-title {
   font-size: 1.375rem;
   padding: 0 8px 8px;
@@ -385,13 +292,15 @@ aside iframe {
 .sub-Film {
   margin-top: 10px;
 }
+/* 右邊欄-----------------------------------*/
 
-/* 左邊欄 */
+/* 左邊欄-----------------------------------*/
 .ad {
   width: 15%;
   order: 1;
   margin-top: 20px;
 }
+/* 左邊欄-----------------------------------*/
 
 
 
@@ -406,6 +315,8 @@ aside iframe {
   }
 /* 頁尾元素----------------------------------*/
    
+
+
 /* 手機版響應式網頁
 ----------------------------------*/
 @media (max-width: 600px) {
@@ -477,4 +388,4 @@ aside iframe {
   }
 }
 /* 手機版響應式網頁(不確定成功沒)
-----------------------------------*/ 
+----------------------------------*/
