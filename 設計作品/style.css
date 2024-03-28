@@ -1,0 +1,391 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfaf2; /* 背景顏色 */
+    color: #373c38;/* 字體顏色 */
+    line-height: 1.6;
+    background-image: url('https://img.freepik.com/free-photo/white-paper-texture_1194-2324.jpg'); /* 背景圖片 */
+    background-repeat: repeat; /* 重複顯示背景圖片 */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  a {
+    color: #373c38;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #a5dee4; 
+  }
+  .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/* 頁首部分-----------------------------------*/
+  header {
+    background-color: #fcfaf2; /* 背景顏色 */
+    padding: 20px 0;
+  }
+/* 標誌 */
+  .instagram {
+    width: 25px;
+    margin-top: 4px;
+    justify-content: flex-start;
+ } 
+ .youtube {
+    width: 30px;
+    margin-top: 5px;
+    justify-content: flex-start;
+ } 
+/* 標誌 */
+/* 主導航菜單 */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #7db9df;/* 背景顏色 */ 
+    color: #fcfaf2;/* 字體顏色 */
+  }
+/* 主導航菜單 */
+/* 影片 */
+.video-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+  }
+  
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/* 影片 */
+/* 頁首部分-----------------------------------*/
+
+
+/* 首頁網頁-----------------------------------*/
+  #home {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    margin-bottom: -100px;
+    border-bottom: 2px #7db9df solid;/* 線顏色 */
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+  }
+  #portfolio {
+    padding: 80px 0;
+  }
+  
+  #portfolio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);/* 透明顏色 */
+    color: #fcfaf2;/* 字體顏色 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .grid-item .overlay h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .grid-item .overlay p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .simple-photo {
+    width: 700px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 25px;
+  }
+/* 首頁網頁-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* 中邊欄-----------------------------------*/
+/* 報導部分 */
+article {
+  width: 60%; /* 在手機版寬度佔滿 */
+  order: 2;
+}
+article img {
+  margin-bottom: 10px;
+}
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.post-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 25px;
+}
+.post-date {
+  background: #0bd;
+  border-radius: 50%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+.post-date span {
+  font-size: 1rem;
+  border-top: 1px rgba(225, 225, 225, .5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+.post-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.post-title,
+.post-cat {
+  margin-left: 120px;
+}
+.post-em {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-bottom: 2px #7db9df solid;/* 線顏色 */
+}
+/* 中邊欄-----------------------------------*/
+
+
+/* 右邊欄-----------------------------------*/
+/* 自我介紹 */
+aside {
+  width: 18%; /* 在較大螢幕寬度為 25% */
+  order: 3;
+}
+aside p {
+  padding: 12px 10px;
+  text-indent: 20px;
+  line-height: 26px;   
+  margin: -10px auto;
+  margin-bottom: 0px;
+}
+aside iframe {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 300px; /* 在手機版寬度佔滿 */
+  height: 200px; /* 調整相關影片高度 */
+}
+
+/* 相關影片 */
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+.sub-menu {
+  margin-bottom: 60px;
+  list-style: none;
+}
+.sub-menu li {
+  border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+.sub-menu a:hover {
+  color: #0bd;
+}
+.sub-Film {
+  margin-top: 10px;
+}
+/* 右邊欄-----------------------------------*/
+
+/* 左邊欄-----------------------------------*/
+.ad {
+  width: 15%;
+  order: 1;
+  margin-top: 20px;
+}
+/* 左邊欄-----------------------------------*/
+
+
+
+
+
+/* 頁尾元素----------------------------------*/
+  footer {
+    text-align: center;
+    background-color: #373c38;/* 背景顏色 */
+    color: #fcfaf2;/* 字體顏色 */
+    padding: 20px 0;
+  }
+/* 頁尾元素----------------------------------*/
+   
+
+
+/* 手機版響應式網頁
+----------------------------------*/
+@media (max-width: 600px) {
+  .page-title {
+      font-size:2.5rem;
+  }
+  /* 圖片 */
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+  /* 圖片 */
+  .home-content {
+      margin-top: 29%;
+  }
+  h1 {
+      color: #0bd;
+  }
+  .page-header {
+      flex-direction: column;
+      align-items: center;
+  }
+  /* 圖片 */
+  .news-contents {
+      flex-direction: column;
+  }
+  article,
+  aside {
+      width: 100%;
+  }
+  #news .page-title {
+      margin-top: 30px;
+  }
+  aside {
+      margin-top: 60px;
+  }
+  .post-info {
+      margin-bottom: 30px;
+  }
+  .post-date {
+      width: 70px;
+      height: 70px;
+      font-size: 1rem;
+  }
+  .post-date span {
+      font-size: 0.875rem;
+      padding-top: 2px;
+  }
+  .post-title {
+      font-size: 1.375rem;
+  }
+  .post-cat {
+      font-size: 0.875rem;
+      margin-top: 10px;
+  }
+  .post-title,
+  .post-cat {
+      margin-left: 80px;
+  }
+  .big-box {
+      grid-column: auto;
+      grid-row: auto;
+  }
+  .big-box img {
+      height: 100%;
+  }
+}
+/* 手機版響應式網頁(不確定成功沒)
+----------------------------------*/
