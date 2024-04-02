@@ -8,47 +8,51 @@
     <link rel="icon" type="images/LOGO圖/網站LOGO (pdf.io).jpg">
     
 <!--CSS-->    
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<link href="https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <!--CSS-->
 
 <!--Java-->
-    <script src="script.js" defer></script>
+<script src="Main.java" defer></script>
 <!--Java-->
 
 </head>
 <body>
 
 <!--頁首-->
-    <header>
-        <nav>
-            <ul>
-              <li><a href="index.html">首頁</a></li>
-              <li><a href="About Me.html">關於我</a></li>
-              <li><a href="photography.html">攝影作品集</a></li>
-              <li><a href="designworks.html">設計作品集</a></li>
-              <li><a href="Contact Form.html">留言板</a></li>
-              <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
-              <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
-            </ul>
-          </nav>
-    </header>
+  <header>
+      <nav class="main-nav">
+          <div class="hamburger" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="About Me.html">關於我</a></li>
+          <li><a href="photography.html">攝影作品集</a></li>
+          <li><a href="designworks.html">設計作品集</a></li>
+          <li><a href="Contact Form.html">留言板</a></li>
+          <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
+      </ul>
+      </nav>
+  </header>
 <!--頁首-->
 
 
 <!--內文內容-->
     <section id="home">
         <div class="container">
-            <h1>關於我 About Me
-            </h1>
+            <h1>關於我 About Me</h1>
         </div>
     </section>
     <section id="about">
         <div class="container">
             <img class="container-photo" src="images/我的照片/151409拷貝.jpg" alt="自介照片">
             <p>我叫姵萱，是12月15生的射手座，今年19歲。</br>
-            目前是就讀世新大學一名認真ㄉ大學一生，從高中開始接觸攝影相關事物，但主要學習劇場實務，通常擔任行政或導播。
+            目前是就讀世新大學一名認真ㄉ大一生，從高中開始接觸攝影相關事物，但主要學習劇場實務，通常擔任行政或導播。
             興趣是看小說漫畫，不論是網文還是實體書都有接觸，言情最喜歡的是sophia的《喜歡的直線距離》，漫畫的話很喜歡あいだいろ《地縛少年花子君》大正風畫風真的很特別，還喜歡藤原可可亞《妖狐x僕ss》。</br>
             還喜歡聽音樂，最近很喜歡聽松下優也的《L.o.L》，也很常看動漫，心中的動漫no.1絕對是《暗殺教室》！最近也把《葬送的芙莉蓮》、《藥師少女的獨語》和《歡迎來到實力至上主義的教室第三季》給追完。</br>
             電影則是喜歡看漫威系列，最喜歡的電影是岩井俊二的《情書》。</br>
@@ -123,10 +127,29 @@
 
 
 <!--頁尾-->
-    <footer>
-        <p>&copy; 2024 Pessy Portfolio</p>
-    </footer>
-<!--頁尾-->      
+<footer>
+    <div>
+        <ul>
+            <li class="fo"><img src="images/LOGO圖/下載 (1).png"class="youtub-2"><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ">YouTube Pessy</a></li>
+            <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_1215/">Instagram 攝影帳</a></li>
+            <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_20041215/">Instagram 個人帳</a></li>
+            <li class="fo"><img src="images/LOGO圖/flickr-logo-small.png"class="Flickr"><a href="https://tour.tycg.gov.tw/">Flickr</a></li>
+        </ul>
+    </div>
+    <div class="py"> © 2024 Pessy Portfolio</div>
+</footer>
+<!--頁尾-->  
+
+<script>
+    // JavaScript to toggle hamburger menu
+    function toggleMenu() {
+        const navMenu = document.querySelector('.main-nav ul');
+        const hamburger = document.querySelector('.hamburger');
+
+        navMenu.classList.toggle('show');
+        hamburger.classList.toggle('open');
+    }
+</script>
 
 </body>
 </html>

@@ -13,10 +13,99 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link href="https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Your CSS styles here */
+
+    /* Hamburger Menu styles */
+    
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #fcfaf2;
+    }
+
+    .main-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .main-nav ul li {
+        margin-right: 20px;
+    }
+
+    .main-nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    .main-nav ul li a {
+        color: #373c38;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: px;
+        background-color: #373c38;
+        margin: 4px 0;
+        transition: transform 0.3s ease;
+    }
+
+    /* Hamburger Menu styles - End */
+
+    /* Media query for tablet and mobile */
+    @media (max-width: 2000px) {
+        .hamburger {
+            display: flex;
+        }
+
+        .main-nav ul {
+            display: none;
+            flex-direction: column;
+            background-color: #fcfaf2;
+            position: absolute;
+            top: 55px;
+            left: 0;
+            right: -10;
+            padding: 20px;
+            z-index: 99;
+
+        }
+
+        .main-nav ul li {
+            margin: 10px 0;
+        }
+
+        .main-nav ul.show {
+            display: flex;
+        }
+
+        .hamburger.open div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.open div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.open div:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    }
+</style>
 <!--CSS-->
 
 <!--Java-->
-  <script src="script.js" defer></script>
+  <script src="Main.java" defer></script>
 <!--Java-->
 
 </head>
@@ -24,7 +113,12 @@
 
 <!--頁首-->
     <header>
-        <nav>
+        <nav class="main-nav">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         <ul>
             <li><a href="index.html">首頁</a></li>
             <li><a href="About Me.html">關於我</a></li>
@@ -57,7 +151,7 @@
     <section id="about">
         <div class="container about-content">
             <img class="simple-photo" src="images/我的照片/1K4A0951.JPG" alt="照片">
-            <p class="simple-word">Hi！這裡是我分享生活、作品和想法並分享給大家的地方。</br></br>
+            <p>Hi！這裡是我分享生活、作品和想法並分享給大家的地方。</br></br>
                 請隨意瀏覽，如果有任何疑問或建議，歡迎與我聯繫！</br></br>
                 如若對我的作品有興趣可以點右上角的連結追蹤我的Instagram和YouTube。</br></br>
                 我會不時更新作品喔！</br></br>
@@ -154,31 +248,29 @@
 
 
 <!--頁尾-->
-<footer class="">
-
-    <div class="">
-        <div class="">桃園市政府觀光旅遊局</div>
-
-            <div class="">
-                <div>
-                    <p class="">330206 桃園市桃園區縣府路1號</p>
-                    <p class="">電話：(03)332-2101#6209</p>
-                </div>
-            </div>
-                    
-
-            <div class="">
-                <ul class="">
-                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="/zh-tw/siteinformation/securitypolicy">資訊安全政策</a></li>
-                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="/zh-tw/siteinformation/gwoia">網站資料開放宣告</a></li>
-                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="/zh-tw/siteinformation/privacypolicy">隱私權政策</a></li>
-                    <li class=""><a class="text-decoration-none text-default hover-primary trs-all" href="https://tour.tycg.gov.tw/" title="行政資訊網(另開視窗)" target="_blank" rel="noopener noreferrer">行政資訊網</a></li>
-                </ul>
-            </div>
+<footer>
+    <div>
+        <ul>
+            <li class="fo"><img src="images/LOGO圖/下載 (1).png"class="youtub-2"><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ">YouTube Pessy</a></li>
+            <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_1215/">Instagram 攝影帳</a></li>
+            <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_20041215/">Instagram 個人帳</a></li>
+            <li class="fo"><img src="images/LOGO圖/flickr-logo-small.png"class="Flickr"><a href="https://tour.tycg.gov.tw/">Flickr</a></li>
+        </ul>
     </div>
-    <div class="py-1 px-2 text-center bg-gray-200 fz-12px"> © 2024 Pessy Portfolio</div>
+    <div class="py"> © 2024 Pessy Portfolio</div>
 </footer>
 <!--頁尾-->
+
+    <script>
+        // JavaScript to toggle hamburger menu
+        function toggleMenu() {
+            const navMenu = document.querySelector('.main-nav ul');
+            const hamburger = document.querySelector('.hamburger');
+
+            navMenu.classList.toggle('show');
+            hamburger.classList.toggle('open');
+        }
+    </script>
 
 
 

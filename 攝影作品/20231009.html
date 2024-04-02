@@ -21,19 +21,24 @@
 <body>
 
 <!--頁首-->
-    <header>
-        <nav>
-            <ul>
-            <li><a href="https://pessy1215.github.io/home.html">首頁</a></li>
-            <li><a href="https://pessy1215.github.io/About%20Me.html">關於我</a></li>
-            <li><a href="https://pessy1215.github.io/photography.html">攝影作品集</a></li>
-            <li><a href="https://pessy1215.github.io/designworks.html">設計作品集</a></li>
-            <li><a href="https://pessy1215.github.io/Contact%20Form.html">留言板</a></li>
-            <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="main-nav">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="About Me.html">關於我</a></li>
+        <li><a href="photography.html">攝影作品集</a></li>
+        <li><a href="designworks.html">設計作品集</a></li>
+        <li><a href="Contact Form.html">留言板</a></li>
+        <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
+    </ul>
+    </nav>
+</header>
 <!--頁首-->
 <!--內文內容-->
 
@@ -119,9 +124,28 @@
 
 <!--頁尾-->
 <footer>
-    <p>&copy; 2024 Pessy Portfolio</p>
-  </footer>
-<!--頁尾-->         
+    <div>
+        <ul>
+            <li class="fo"><img src="images/LOGO圖/下載 (1).png"class="youtub-2"><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ">YouTube Pessy</a></li>
+            <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_1215/">Instagram 攝影帳</a></li>
+            <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_20041215/">Instagram 個人帳</a></li>
+            <li class="fo"><img src="images/LOGO圖/flickr-logo-small.png"class="Flickr"><a href="https://tour.tycg.gov.tw/">Flickr</a></li>
+        </ul>
+    </div>
+    <div class="py"> © 2024 Pessy Portfolio</div>
+</footer>
+<!--頁尾-->      
+
+<script>
+    // JavaScript to toggle hamburger menu
+    function toggleMenu() {
+        const navMenu = document.querySelector('.main-nav ul');
+        const hamburger = document.querySelector('.hamburger');
+
+        navMenu.classList.toggle('show');
+        hamburger.classList.toggle('open');
+    }
+</script>
 
 </body>
 </html>

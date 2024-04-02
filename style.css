@@ -10,7 +10,7 @@ body {
   }
   
   .container {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -25,7 +25,7 @@ body {
   }
 
   .wrapper {
-    max-width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -104,13 +104,13 @@ body {
   
   #home h1 {
     font-size: 3rem;
-    margin-bottom: -100px;
     border-bottom: 2px #7db9df solid;/* 線顏色 */
   }
   
   #home p {
     font-size: 1.2rem;
   }
+
   #portfolio {
     padding: 80px 0;
   }
@@ -187,16 +187,11 @@ body {
   .about-content {
     display: flex;
     align-items: center; /* 垂直置中對齊 */ 
-
     transition: transform 0.3s ease;
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  .simple-word {
-    flex: 1; /* 伸展以填滿剩餘空間 */
-    color: #333;
-}
   /* .recommend iframe {
     height: 250px;
     width: 400px;
@@ -234,7 +229,7 @@ body {
   }
 
   #about p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .h4content {
@@ -330,77 +325,572 @@ body {
     color: #fcfaf2;/* 字體顏色 */
     padding: 20px 0;
   }
+  .fo,a {
+    color: #fcfaf2;/* 字體顏色 */
+    margin-bottom: 10px ;
+    font-size: 18px;
+  }
+  .youtub-2 {
+    width: 39px;
+    margin-bottom: -10px;
+    margin-right: 29px ;
+  }
+  .instagram-2 {
+    width: 35px;
+    margin-bottom: -7px;
+    margin-right: 10px ;
+  }
+  .Flickr {
+    margin-right: 45px ;
+  }
+
+
+
 /* 頁尾元素----------------------------------*/
    
-/* 手機版響應式網頁
-----------------------------------*/
-@media (max-width: 600px) {
-  .page-title {
-      font-size:2.5rem;
-  }
-  /* 圖片 */
-  .main-nav {
-      font-size: 1rem;
-      margin-top: 10px;
-  }
-  .main-nav li {
-      margin: 0 20px;
-  }
-  /* 圖片 */
-  .home-content {
-      margin-top: 29%;
-  }
-  h1 {
-      color: #0bd;
-  }
-  .page-header {
-      flex-direction: column;
-      align-items: center;
-  }
-  /* 圖片 */
-  .news-contents {
-      flex-direction: column;
-  }
-  article,
-  aside {
-      width: 100%;
-  }
-  #news .page-title {
-      margin-top: 30px;
-  }
-  aside {
-      margin-top: 60px;
-  }
-  .post-info {
-      margin-bottom: 30px;
-  }
-  .post-date {
-      width: 70px;
-      height: 70px;
-      font-size: 1rem;
-  }
-  .post-date span {
-      font-size: 0.875rem;
-      padding-top: 2px;
-  }
-  .post-title {
-      font-size: 1.375rem;
-  }
-  .post-cat {
-      font-size: 0.875rem;
-      margin-top: 10px;
-  }
-  .post-title,
-  .post-cat {
-      margin-left: 80px;
-  }
-  .big-box {
-      grid-column: auto;
-      grid-row: auto;
-  }
-  .big-box img {
-      height: 100%;
-  }
+/* 漢堡選單元素----------------------------------*/
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fcfaf2;
 }
-/* 手機版響應式網頁(不確定成功沒)
-----------------------------------*/
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.main-nav ul li a {
+    color: #373c38;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 2px;
+    background-color: #373c38;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
+    .hamburger {
+        display: flex;
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fcfaf2;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: -10;
+        padding: 20px;
+        z-index: 99;
+
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-nav ul.show {
+        display: flex;
+    }
+
+    .hamburger.open div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.open div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+/* 漢堡選單元素----------------------------------*/
+
+
+
+
+
+
+/* 響應式 CSS */
+
+/* 手機版響應式 320 */
+@media only screen and (max-width: 320px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    padding: 2px 0;
+    background-color: #fcfaf2; /* 背景顏色 */
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+
+  /* 響應式 頁首  */
+  nav ul li {
+    margin: 0 5px;
+    line-height: 20px ;
+  }
+
+  nav ul li a {
+    font-size: 0.7rem;
+  }
+
+  .video-container {
+    margin-top: -99px;
+  }
+
+  .instagram {
+    width: 15px;
+    margin-top: 4px;
+ } 
+
+ .youtube {
+    width: 20px;
+    margin-top: 5px;
+  }
+  /* 響應式 頁首  */
+
+  /* 響應式 首頁  */
+  #home h1 {
+    font-size: 1rem;
+    margin-top: -40px;
+    margin-bottom: -250px;
+  }
+
+  #about p {
+    font-size: 0.5rem;
+  }
+
+  #about h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  #about h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .container-photo {
+    width: 250px;
+    margin-bottom: 20px;
+    margin-top: -150px;
+  }
+
+  .simple-photo {
+    width: 250px;
+    margin-bottom: 20px;
+    margin-top: -70px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  /* 響應式 首頁  */
+
+  #portfolio h2 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .grid-item img {
+    border-radius: 8px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: -150px;
+  }
+
+  /* 響應式 留言板  */
+  .googleform {
+    width: 300px;
+    margin-top: -150px;
+    margin-bottom: 20px;
+    margin-left: -100px;
+  }
+  .comment {
+    margin-left: -80px;
+  }
+  .comment h4 {
+    font-size: 0.7rem;
+  }
+  .comment p {
+    font-size: 0.5rem;
+  }
+  .comment-form {
+    margin-left: -80px;   
+  }
+  .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  form input[type="text"],
+  form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fcfaf2;
+    border-radius: 5px;
+  }
+  form button {
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+
+  /* 響應式 留言板  */
+
+  /* 響應式 首尾  */
+  footer {
+    padding: 10px 0;
+    font-size: 0.5rem;
+  }
+
+  footer div {
+    padding: 10px 0;
+  }
+  /* 響應式 頁尾  */
+
+  /* 響應式 漢堡選單  */
+  .hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: #373c38;
+    margin: 3px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .main-nav ul {
+      top: 55px;
+      left: 0;
+      right: -10;
+      padding: 20px;
+      z-index: 99;
+
+  }
+
+  .main-nav ul li {
+      margin: 10px 0;
+  }
+  /* 響應式 漢堡選單  */
+
+
+}
+/* 手機版響應式 320 */
+
+
+
+/* 平板及桌面響應式 720 */
+@media only screen and (min-width: 880px) {
+ 
+  /* 響應式 頁首  */
+  nav ul li {
+    margin: 0 15px;
+    line-height: 20px ;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .video-container {
+    margin-top: -99px;
+  }
+
+  .instagram {
+    width: 15px;
+    margin-top: 4px;
+ } 
+
+ .youtube {
+    width: 20px;
+    margin-top: 5px;
+  }
+
+  /* 響應式 頁首  */
+
+
+  /* 響應式 首頁  */
+  #home h1 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: -100px;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  #about h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  #about h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .container-photo {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .simple-photo {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /* 響應式 首頁  */
+
+  #portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .grid-item img {
+    border-radius: 10px;
+  }
+
+  /* 響應式 漢堡選單  */
+  .hamburger div {
+    width: 30px;
+    height: 2px;
+    background-color: #373c38;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+  .main-nav ul {
+      top: 0px;
+      left: 0;
+      right: -10;
+      padding: 20px;
+      z-index: 99;
+
+  }
+  .main-nav ul li {
+      margin: 10px 0;
+  }
+  /* 響應式 漢堡選單  */
+
+
+
+}
+/* 平板及桌面響應式 720 */
+
+
+
+/* 大型桌面響應式 */
+@media only screen and (min-width: 1024px) {
+  
+/* 響應式 頁首  */
+nav ul li {
+  margin: 0 20px;
+  line-height: 20px ;
+}
+
+nav ul li a {
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 100px;
+}
+
+.video-container {
+  margin-top: -99px;
+}
+
+.instagram {
+  width: 25px;
+  margin-top: 4px;
+} 
+.youtube {
+  width: 30px;
+  margin-top: 5px;
+}
+/* 響應式 頁首  */
+
+/* 響應式 首頁  */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+#home h1 {
+  font-size: 3rem;
+}
+
+
+#about p {
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+#about h3 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#about h4 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 12px;
+  margin-left: 18px;
+}
+
+.container-photo {
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.simple-photo {
+  width: 800px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.about-content {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+/* 響應式 首頁  */
+
+#portfolio h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.grid-item img {
+  border-radius: 12px;
+}
+
+.grid {
+  gap: 30px;
+}
+
+/* 響應式 留言板  */
+.googleform {
+  width: 800px;
+  margin-bottom: 20px;
+  margin-left: 400px;
+}
+.comment {
+  margin-left: 400px;
+}
+.comment h4 {
+  font-size: 1.5rem;
+}
+.comment p {
+  font-size: 1.3rem;
+}
+.comment-form {
+  margin-left: 400px; 
+}
+.avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+form input[type="text"],
+form textarea {
+  width: 120%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fcfaf2;
+  border-radius: 5px;
+}
+form button {
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* 響應式 留言板  */
+
+/* 響應式 首尾  */
+footer div {
+  padding: 20px 0;
+}
+/* 響應式 頁尾  */
+
+  /* 響應式 漢堡選單  */
+  .hamburger div {
+    width: 45px;
+    height: 3px;
+    background-color: #373c38;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+    margin-left: 30px;
+  }
+
+  .main-nav ul {
+      top: 110px;
+      left: 0;
+      right: -10;
+      padding: 20px;
+      z-index: 99;
+      font-size: 3rem;
+
+  }
+
+  .main-nav ul li {
+      margin: 20px 0px;
+  }
+  /* 響應式 漢堡選單  */
+
+}
+
+
+/* 大型桌面響應式 */
