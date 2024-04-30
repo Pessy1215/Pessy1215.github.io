@@ -84,6 +84,7 @@
 
 /* 基本元素----------------------------------*/
 body {
+  background-image: url(https://thumb.ac-illust.com/ba/bab0f742373b1c7c3c62aeda2e7dd8bf_t.jpeg);
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -423,13 +424,14 @@ legend + * {
   left: 0;
   width: 100%;
   height: 50%;
-  margin-top: -99px;
+  margin-top: -101px;
   margin-bottom: 40px;
 }
 .video-container video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-sizing: content-box
 }
 /* 影片 */
 /* 首頁網頁-----------------------------------*/
@@ -440,6 +442,7 @@ legend + * {
 #home h1 {
   font-size: 3rem;
   border-bottom: 2px #7db9df solid;/* 線顏色 */
+  font-family: 'Roboto', sans-serif;
 }
 #home p {
   font-size: 1.2rem;
@@ -513,6 +516,29 @@ legend + * {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+table { 
+  border:1px solid #000; 
+  font-family: 微軟正黑體; 
+  font-size:16px; 
+  margin-left: 13rem;
+  width:70%;
+  border:1px solid #000;
+  text-align:center;
+  border-collapse:collapse;
+  margin-bottom: 5rem;
+} 
+th { 
+  background-color: #009FCC;
+  padding:10px;
+  border:1px solid #000;
+  color:#fff;
+  text-align: center; 
+} 
+td { 
+  border:1px solid #000;
+  padding:5px;
+  text-align: justify; 
+} 
 /* 首頁網頁-----------------------------------*/
 /* 關於我網頁---------------------------------*/
 #about {
