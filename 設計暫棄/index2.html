@@ -1,0 +1,243 @@
+<!--首頁網頁-->
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pessy Portfolio</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="images/png" href="images/LOGO圖/網站LOGO (pdf.io).jpg">
+
+        <!--CSS-->  
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="my_style.css">
+        <style>
+            /* Your CSS styles here */
+            /* Hamburger Menu styles */
+            .main-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                background-color: #fcfaf2;
+            }
+            .main-nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            .main-nav ul li {
+                margin-right: 20px;
+            }
+            .main-nav ul li:last-child {
+                margin-right: 0;
+            }
+            .main-nav ul li a {
+                color: #373c38;
+                text-decoration: none;
+            }
+            .hamburger {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+            }
+            .hamburger div {
+                width: 30px;
+                height: px;
+                background-color: #373c38;
+                margin: 4px 0;
+                transition: transform 0.3s ease;
+            }
+            /* Hamburger Menu styles - End */
+            /* Media query for tablet and mobile */
+            @media (max-width: 2000px) {
+                .hamburger {
+                    display: flex;
+                }
+                .main-nav ul {
+                    display: none;
+                    flex-direction: column;
+                    background-color: #fcfaf2;
+                    position: absolute;
+                    top: 55px;
+                    left: 0;
+                    right: -10;
+                    padding: 20px;
+                    z-index: 99;
+                }
+                .main-nav ul li {
+                    margin: 10px 0;
+                }
+                .main-nav ul.show {
+                    display: flex;
+                }
+                .hamburger.open div:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                .hamburger.open div:nth-child(2) {
+                    opacity: 0;
+                }
+                .hamburger.open div:nth-child(3) {
+                    transform: rotate(-45deg) translate(5px, -5px);
+                }
+            }
+        </style>
+        <!--CSS-->
+        <!--Java-->
+        <script src="Main.java" defer></script>
+        <!--Java-->
+    </head>
+    <body>
+<!--頁首-->
+        <header>
+            <nav class="main-nav">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="About Me.html">關於我</a></li>
+                    <li><a href="photography.html">攝影作品集</a></li>
+                    <li><a href="designworks.html">設計作品集</a></li>
+                    <li><a href="share.html">興趣分享</a></li>
+                    <li><a href="Contact Form.html">留言板</a></li>
+                    <li><a href="https://www.instagram.com/pessy_1215/"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp" alt="標誌" class="instagram"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ"><img src="images/LOGO圖/下載 (1).png" alt="標誌" class="youtube"></a></li>
+                </ul>
+            </nav>
+        </header>
+<!--頁首-->
+<!--內文內容-->
+            <section id="home">
+                <div class="video-container">
+                    <video autoplay muted loop>
+                        <source src="images/影片/【影視35】112藝術群專題比賽1分鐘片花.mp4" type="video/mp4">
+                    </video>
+                </div> 
+                <div class="container">
+                    <h1>個人作品集 personal portfolio</h1>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container about-content">
+                    <img class="simple-photo" src="images/我的照片/1K4A0951.JPG" alt="照片">
+                    <p>Hi！這裡是我分享生活、作品和想法並分享給大家的地方。</br></br>
+                        請隨意瀏覽，如果有任何疑問或建議，歡迎與我聯繫！</br></br>
+                        如若對我的作品有興趣可以點右上角的連結追蹤我的Instagram和YouTube。</br></br>
+                        我會不時更新作品喔！</br></br>
+                        如果想知道我的資訊可以點擊「關於我」，裡面會有我的相關介紹。</p>
+                </div>
+            </section>
+
+            <section id="portfolio" class="gallery">
+                <div class="container">
+                    <h2>最新作品</h2>
+                <div class="grid">
+
+                <div class="grid-item">
+                    <img src="images/作品照片/截圖 2024-03-28 上午2.38.53.png" alt="作品1">
+                    <div class="overlay">
+                        <a href="攝影作品/20231219.html">
+                            <h3>忠烈祠紀念堂桃園神社</h3>
+                            <p>日期｜2023.12.19 </br>拍攝器材｜Canon 70D 15-85mm</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/作品照片/截圖 2024-03-28 上午2.38.00.png" alt="作品2">
+                    <div class="overlay">
+                        <a href="攝影作品/20231009.html">
+                            <h3>新北市 寶橋路口</h3>
+                            <p>日期｜2023.10.9 </br>拍攝器材｜Canon 70D 15-85mm</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/作品照片/截圖 2024-03-28 上午2.37.12.png" alt="作品2">
+                    <div class="overlay">
+                        <a href="攝影作品/20230922.html">
+                            <h3>台北市 世新大學</h3>
+                            <p>日期｜2023.9.22 </br>拍攝器材｜Canon 70D 15-85mm</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/作品照片/截圖 2024-03-28 上午2.38.53.png" alt="作品1">
+                    <div class="overlay">
+                        <a href="攝影作品/20231219.html">
+                            <h3>忠烈祠紀念堂桃園神社</h3>
+                            <p>日期｜2023.12.19 </br>拍攝器材｜Canon 70D 15-85mm</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/作品照片/截圖 2024-03-28 下午2.22.45.png" alt="作品2">
+                    <div class="overlay">
+                        <a href="攝影作品/20230926.html">
+                            <h3>台北市 水源市場</h3>
+                            <p>日期｜2023.9.26 </br>拍攝器材｜Canon 70D 15-85mm</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/作品照片/截圖 2024-03-28 下午2.30.42.png" alt="作品2">
+                    <div class="overlay">
+                        <a href="攝影作品/20190000.html">
+                            <h3>桃園市 中壢火車站</h3>
+                            <p>日期｜2019.. </br>拍攝器材｜Canon 70D 15-85mm</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/作品照片/截圖 2024-03-28 下午2.55.30.png" alt="作品2">
+                    <div class="overlay">
+                        <a href="設計作品/20221028.html">
+                            <h3>中場休息 文宣</h3>
+                            <p>日期｜2022.10.28/29 </br>設計軟體｜Adob Photoshop</br>Adob lllustrator</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 可以添加更多作品 -->
+
+                </div>
+            </div>
+        </section>
+<!--內文內容-->
+<!--頁尾-->
+        <footer>
+            <div>
+                <ul>
+                    <li class="fo"><img src="images/LOGO圖/下載 (1).png"class="youtub-2"><a href="https://www.youtube.com/channel/UCcCuz7CWCGDg0jkvyG0qwxQ" target="_blank">YouTube Pessy</a></li>
+                    <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_1215/" target="_blank">Instagram 攝影帳</a></li>
+                    <li class="fo"><img src="images/LOGO圖/Instagram_logo_2022.svg.webp"class="instagram-2"><a href="https://www.instagram.com/pessy_20041215/" target="_blank">Instagram 個人帳</a></li>
+                    <li class="fo"><img src="images/LOGO圖/flickr-logo-small.png"class="Flickr"><a href="https://tour.tycg.gov.tw/">Flickr</a></li>
+                </ul>
+            </div>
+            <div class="py"> © 2024 Pessy Portfolio</div>
+        </footer>
+<!--頁尾-->
+        <script>
+            // JavaScript to toggle hamburger menu
+            function toggleMenu() {
+                const navMenu = document.querySelector('.main-nav ul');
+                const hamburger = document.querySelector('.hamburger');
+
+                navMenu.classList.toggle('show');
+                hamburger.classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>

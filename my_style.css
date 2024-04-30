@@ -101,38 +101,31 @@ nav ul li a:hover {
   text-align: center;
   padding: 100px 0;
 }
-
 #home h1 {
   font-size: 3rem;
   border-bottom: 2px #7db9df solid;/* 線顏色 */
 }
-
 #home p {
   font-size: 1.2rem;
 }
-
 #portfolio {
   padding: 80px 0;
 }
-
 #portfolio h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
-
 .grid-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
-
 .grid-item img {
   width: 100%;
   height: auto;
@@ -140,7 +133,6 @@ nav ul li a:hover {
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-
 .grid-item .overlay {
   position: absolute;
   top: 0;
@@ -156,22 +148,18 @@ nav ul li a:hover {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 .grid-item:hover .overlay {
   opacity: 1;
 }
-
 .grid-item .overlay h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
   text-align: center;
 }
-
 .grid-item .overlay p {
   font-size: 1rem;
   text-align: center;
 }
-
 .simple-photo {
   width: 700px;
   height: auto;
@@ -182,8 +170,6 @@ nav ul li a:hover {
   flex: 0 0 auto; /* 不伸縮 */
   margin-right: 20px; /* 調整圖片與文字間距 */
 }
-
-
 .about-content {
   display: flex;
   align-items: center; /* 垂直置中對齊 */ 
@@ -207,36 +193,30 @@ nav ul li a:hover {
 #about {
   padding: 80px 0;
 }
-
 #about h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
-
 #about h3 {
   font-size: 36px;
   margin-bottom: 5px;
   margin-top: 20px;
   border-bottom: 2px #7db9df solid;/* 線顏色 */
 }
-
 #about h4 {
   font-size: 30px;
   margin-bottom: 5px;
   margin-top: 12px;
   margin-left: 10px;
 }
-
 #about p {
   font-size: 20px;
 }
-
 .h4content {
   font-size: 16px;
   margin-left: 10px;
 }
-
 .container-photo {
   width: 700px;
   height: auto;
@@ -245,7 +225,6 @@ nav ul li a:hover {
   transition: transform 0.3s ease;
   margin-bottom: 25px;
 }
-
 .go {
   color: #373c38;
   width: 100%;
